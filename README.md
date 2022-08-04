@@ -32,6 +32,11 @@ ________________________________________________________________________________
    <img src="./3tier.png">
 
 
+### Refrences: Terrafrom Code:
+https://www.codeproject.com/Articles/5260755/Create-an-Azure-Virtual-Machine-with-Terraform
+https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/mssql_database
+https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_web_app
+
 ___________________________________________________________________________________
 
 ## Challenge #2  --> aws_instance_metadata
@@ -54,6 +59,10 @@ pip install boto3
  2) Run the python script ,enter the key to search.
 python aws_instance_metadata/get_aws_instance_metadata.py
 
+
+### Refrences: 
+
+https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instances
 ___________________________________________________________________________________
 
 
@@ -66,3 +75,8 @@ ______________________________________
  1) Run the python script.
 
 python getvaluefromobject/getValueFromObjectForKey_ifexist.py
+
+
+### Refrences: 
+
+https://stackoverflow.com/questions/39233973/get-all-keys-of-a-nested-dictionary

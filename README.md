@@ -4,7 +4,7 @@
 _____________
 
 
- Steps to execute Terrafrom code:
+### Steps to execute Terrafrom code:
 
 
  1) traverse to resource DIR
@@ -38,7 +38,7 @@ ________________________________________________________________________________
 _____________
 
 
- Steps to execute python code:
+### Steps to execute python code:
 -------------------------------
 
  0) Prerequisite:
@@ -60,7 +60,7 @@ ________________________________________________________________________________
 ## Challenge #3 --> getvaluefromobject
 ______________________________________
 
- Steps to execute python code:
+### Steps to execute python code:
 -------------------------------
 
  1) Run the python script.

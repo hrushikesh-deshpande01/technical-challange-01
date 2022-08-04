@@ -8,19 +8,24 @@ _____________
 
 
  1) traverse to resource DIR
+ 
 cd iaac/tenant/sample-tenant/<resource>
 
  2)  Set ENV_DIR variable to one of following dev,qa,uat,preprod and prod.
+ 
 ENV_DIR="dev"
+
 PLAN_FILE="terraform-plan.tfplan"
 
  3) Terrafrom Initialization.
 terraform init -backend-config="$ENV_DIR\backend.tfvars" -reconfigure
 
  4) Terrafrom plan.
+ 
 terrafrom plan -var-file="$ENV_DIR\terrafrom.tfvars" -out="$PLAN_FILE"
 
  5) Terrafrom deploy resource from plan file.
+ 
 Terrafrom apply -input=false -auto-approve "$PLAN_FILE"
 
   
@@ -53,10 +58,12 @@ Install  python and pip : https://docs.aws.amazon.com/elasticbeanstalk/latest/dg
 Configure awscli : https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html
 
  1) Install boto3 python module
+ 
 pip install boto3
 
 
  2) Run the python script ,enter the key to search.
+ 
 python aws_instance_metadata/get_aws_instance_metadata.py
 
 

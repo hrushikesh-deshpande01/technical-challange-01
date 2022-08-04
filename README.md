@@ -1,11 +1,11 @@
 
 
-# Challenge #1 --> iaac
+## Challenge #1 --> iaac
 _____________
 
-# ######################################
+
  Steps to execute Terrafrom code:
-# ######################################
+
 
  1) traverse to resource DIR
 cd iaac/tenant/sample-tenant/<resource>
@@ -23,53 +23,53 @@ terrafrom plan -var-file="$ENV_DIR\terrafrom.tfvars" -out="$PLAN_FILE"
  5) Terrafrom deploy resource from plan file.
 Terrafrom apply -input=false -auto-approve "$PLAN_FILE"
 
-
-Project Structure example :
-iaac
-   |- modues
-   |    |- virtual_machines
-   |    |   |- terrafrom files
-   |    |- mssql_server
-   |    |   |- terrafrom files
-   |    |- web_app
-   |    |   |- terrafrom files
-   |   
-   |- tenant
-   |    |- sample-tenant
-   |        |- virtual_machine
-   |        |   |- envs
-   |        |   |  |- dev\qa\uat\pp\prod
-   |        |   |      |- terrafrom files
-   |        |   |-terrafrom files
-   |        | 
-   |        |- mssql_server
-   |        |   |- envs
-   |        |   |  |- dev\qa\uat\pp\prod
-   |        |   |      |- terrafrom files
-   |        |   |-terrafrom files
-   |        | 
-   |        |- web_app
-   |        |   |- envs
-   |        |   |  |- dev\qa\uat\pp\prod
-   |        |   |      |- terrafrom files
-   |        |   |-terrafrom files
-   |       
-   |- Readme.md
+>
+> Project Structure example :
+> iaac
+>   |- modues
+>   |    |- virtual_machines
+>   |    |   |- terrafrom files
+>   |    |- mssql_server
+>   |    |   |- terrafrom files
+>   |    |- web_app
+>   |    |   |- terrafrom files
+>   |   
+>   |- tenant
+>   |    |- sample-tenant
+>   |        |- virtual_machine
+>   |        |   |- envs
+>   |        |   |  |- dev\qa\uat\pp\prod
+>   |        |   |      |- terrafrom files
+>   |        |   |-terrafrom files
+>   |        | 
+>   |        |- mssql_server
+>   |        |   |- envs
+>   |        |   |  |- dev\qa\uat\pp\prod
+>   |        |   |      |- terrafrom files
+>   |        |   |-terrafrom files
+>   |        | 
+>   |        |- web_app
+>   |        |   |- envs
+>   |        |   |  |- dev\qa\uat\pp\prod
+>   |        |   |      |- terrafrom files
+>   |        |   |-terrafrom files
+>   |       
+>   |- Readme.md
 
   
 
-   ![Alt text](./3tier.svg)
+   
    <img src="./3tier.svg">
 
 
 ___________________________________________________________________________________
 
-# Challenge #2  --> aws_instance_metadata
+## Challenge #2  --> aws_instance_metadata
 _____________
 
-# ######################################
+
  Steps to execute python code:
-# ######################################
+-------------------------------
 
  0) Prerequisite:
 
@@ -87,12 +87,11 @@ python aws_instance_metadata/get_aws_instance_metadata.py
 ___________________________________________________________________________________
 
 
-# Challenge #3 --> getvaluefromobject
+## Challenge #3 --> getvaluefromobject
 ______________________________________
 
-# ######################################
  Steps to execute python code:
-# ######################################
+-------------------------------
 
  1) Run the python script.
 python getvaluefromobject/getValueFromObjectForKey_ifexist.py

@@ -23,43 +23,13 @@ terrafrom plan -var-file="$ENV_DIR\terrafrom.tfvars" -out="$PLAN_FILE"
  5) Terrafrom deploy resource from plan file.
 Terrafrom apply -input=false -auto-approve "$PLAN_FILE"
 
->
-> Project Structure example :
-> iaac
->   |- modues
->   |    |- virtual_machines
->   |    |   |- terrafrom files
->   |    |- mssql_server
->   |    |   |- terrafrom files
->   |    |- web_app
->   |    |   |- terrafrom files
->   |   
->   |- tenant
->   |    |- sample-tenant
->   |        |- virtual_machine
->   |        |   |- envs
->   |        |   |  |- dev\qa\uat\pp\prod
->   |        |   |      |- terrafrom files
->   |        |   |-terrafrom files
->   |        | 
->   |        |- mssql_server
->   |        |   |- envs
->   |        |   |  |- dev\qa\uat\pp\prod
->   |        |   |      |- terrafrom files
->   |        |   |-terrafrom files
->   |        | 
->   |        |- web_app
->   |        |   |- envs
->   |        |   |  |- dev\qa\uat\pp\prod
->   |        |   |      |- terrafrom files
->   |        |   |-terrafrom files
->   |       
->   |- Readme.md
-
   
+  <img src="./project_structure.png">
+  
+___________________________________________________________________________________
 
    
-   <img src="./3tier.svg">
+   <img src="./3tier.png">
 
 
 ___________________________________________________________________________________
@@ -94,4 +64,5 @@ ______________________________________
 -------------------------------
 
  1) Run the python script.
+
 python getvaluefromobject/getValueFromObjectForKey_ifexist.py

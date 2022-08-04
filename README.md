@@ -24,7 +24,7 @@ terrafrom plan -var-file="$ENV_DIR\terrafrom.tfvars" -out="$PLAN_FILE"
 Terrafrom apply -input=false -auto-approve "$PLAN_FILE"
 
   
-  <img src="./project_structure.png">
+  <img src="./project_structure.PNG">
   
 ___________________________________________________________________________________
 

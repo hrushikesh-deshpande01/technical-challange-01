@@ -9,7 +9,7 @@ _____________
 
  1) traverse to resource DIR
  
-cd iaac/tenant/sample-tenant/<resource>
+cd iaac/tenant/sample-tenant/{resource}
 
  2)  Set ENV_DIR variable to one of following dev,qa,uat,preprod and prod.
  
